@@ -1,0 +1,53 @@
+<div>
+<h1 class="center-align">  Contact me ! </h1>
+<p>Could you please fill this form, i'll answer as fast as possible. Ewen Dusch - Developer - Web creator - WebMaster</p>
+</div>
+<form action="contactsubmit.php" method="POST">
+<?php if($showonfail!=''): ?>
+  <h4 class="center-align red-text"><?= $showonfail ?></h4>
+<?php endif; ?>
+<?php if($showonwin!=''): ?>
+  <h4 class="center-align red-text"><?= $showonwin ?></h4>
+<?php endif; ?>
+	<div class="row">
+		<div class="input-field col s12">
+          <input  id="first_name" type="text" class="validate" name="name">
+          <label for="first_name">Your name</label>
+        </div>
+        
+	</div>
+	<div class="row">
+		<div class="input-field col s12">
+          <input id="email" type="email" class="validate" name="email">
+          <label for="email" data-error="wrong" data-success="right">Email</label>
+     	</div>
+	</div>
+	<p class="center-align blue-text text-darken-3">What do you need ?</p>
+	<div class="row">
+		<div class="col s6 m6 l2 offset-l2">
+		<input type="radio" id="dev" name="presta" value="ContactDevelopement"/>
+      	<label for="dev">Development</label>
+      	</div>
+      	<div class="col s6 m6 l2">
+		<input type="radio" id="crea" name="presta" value="ContactWebsiteCreation"/>
+      	<label for="crea">Website creation</label>
+      	</div>
+      	<div class="col s6 m6 l2">
+		<input type="radio" id="rework" name="presta" value="ContactWebsiteReword"/>
+      	<label for="rework">Website rework</label>
+      	</div>
+      	<div class="col s6 m6 l2">
+		<input type="radio" id="else" name="presta" value="ContactElse"/>
+      	<label for="else">Else</label>
+      	</div>
+	</div>
+	<div class="row">
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea validate" name="text" ></textarea>
+          <label for="textarea1">Your message </label>
+        </div>
+    </div>
+    <div class="row center-align">
+    <button class="waves-effect waves-light btn-large blue darken-1" name="send" type="submit">Send</button>
+    </div>
+</form>

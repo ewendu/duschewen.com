@@ -1,0 +1,179 @@
+*
+{
+	box-sizing: border-box;
+}
+header h1 
+{
+	font-size: 10em;
+	font-family: 'Cuprum', sans-serif;
+}
+header  .btn-large
+{
+	margin-left: 20%;
+}
+header li 
+{
+	margin-left: 10%;
+}
+nav ul li a 
+{
+	font-size: 1.5em;
+}
+/* Sticky menu */
+.size
+{
+	width: 60%!important;
+	left: 50px!important;
+	top: 20px!important;
+}
+#url
+{
+	margin-right: 20%;
+	margin-top: 0.7%;
+}
+#logo
+{
+	margin-left: 25%;
+	display: none;
+}
+#portfolio
+{
+	margin-right: 20%;
+	display: none;
+	font-size: 10px;
+
+}
+.sticky
+{
+	width:100%;
+	top:0;
+	z-index:999;
+	-webkit-transition:height 0.3s ease;
+	-moz-transition:height 0.3s ease;
+	-ms-transition:height 0.3s ease;
+	-o-transition:height 0.3s ease;
+	transition:height 0.3s ease;
+}
+.sticky img
+{
+	-webkit-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-ms-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s;
+}
+.sticky.smaller
+{
+	height:auto;
+	background-color:#ffffff;
+	position:fixed;
+}
+.sticky.smaller img
+{
+	width:40px;
+	height:40px;
+	vertical-align:middle;
+}
+.sticky.smaller #logo
+{
+	display: block;
+	font-size:50px;
+	margin-right:5px;
+}
+.sticky.smaller #portfolio
+{
+	display: block;
+}
+.sticky.smaller nav
+{
+	display:inline-block;
+	vertical-align: middle;
+}
+.sticky.smaller nav a
+{
+	background-color:#ffffff;
+	color:#0052a4;
+	padding:0;
+	display:inline-block;
+	margin:0 4px;
+}
+.sticky.smaller
+{
+	box-shadow:0 1px 7px rgba(0,0,0,0.3);
+}
+/* Form */ 
+
+
+.input-field label
+{
+    color: #0277BD;
+}
+.input-field input[type=text]:focus + label 
+{
+    color: #0d47a1;
+}
+.input-field input[type=email]:focus + label 
+{
+    color: #0d47a1;
+}
+.input-field input[type=text]:focus 
+{
+    border-bottom: 1px solid #0d47a1;
+    box-shadow: 0 1px 0 0 #000;
+}
+.input-field input[type=email]:focus 
+{
+    border-bottom: 1px solid #0d47a1;
+    box-shadow: 0 1px 0 0 #000;
+}
+.materialize-textarea:focus
+{
+	border-bottom: 1px solid #0d47a1!important;
+    box-shadow: 0 1px 0 0 #000!important;
+}
+.materialize-textarea:focus + label
+{
+	color: #0d47a1!important;
+}
+
+@media screen and (max-width: 600px)
+ {
+ 	
+ 	header  .btn-large
+	{
+	margin: 0;
+	}
+
+ }
+ @media screen and (max-width: 1300px)
+ {
+
+	 #logo
+	{
+		display: none!important;
+	}
+	
+	#portfolio
+	{
+	 	float: right;
+	 	display: none!important;
+	}
+ }
+ .check
+ {
+ 	font-size: 2em;
+ }
+ .portfolio
+ {
+ 	border-bottom: 1px solid;
+ 	padding: 2%;
+
+ }
+ .portfolio img
+ {
+ 	max-width: 50%;
+ }
+ footer ul li 
+ {
+ 	font-size: 1.1em!important;
+ }

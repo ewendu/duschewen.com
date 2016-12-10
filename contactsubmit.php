@@ -8,9 +8,9 @@ $template = 'contact';
 $destination = 'duschewen.contact@gmail.com';
 $showonwin="";
 $showonfail="";
-$clone = 'yes'; // 'yes' or 'no'
+$clone = 'no'; // 'yes' or 'no'
 
-$message_envoye = "We got your message ! We sent you the same message as a proof.";
+$message_envoye = "I got your message !";
 $message_non_envoye = "Nothing has been sent, can you please try again.";
 
 $message_erreur_formulaire = "You have to fill the form.";
@@ -112,7 +112,7 @@ else :
     };
     include 'layout.phtml';
 
-endif; // fin du if (!isset($_POST['envoi']))
+endif; // end of if (!isset($_POST['envoi']))
 
 
 

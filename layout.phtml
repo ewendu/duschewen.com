@@ -21,44 +21,44 @@
 	<header>
 		 <div>
 			<div class="grey lighten-3">
-				<a href="portfolio-web.php" class="waves-effect waves-light btn-large red darken-3"><i class="fa fa-book" aria-hidden="true"></i>
+				<a href="portfolio-web" class="waves-effect waves-light btn-large red darken-3"><i class="fa fa-book" aria-hidden="true"></i>
 				Portfolio</a>
 				<span id="url" class="right hide-on-small-only">duschewen.com</span>
 			</div>
 		</div>
 		<div>
-			<h1 class="center-align"><span class="grey-text">D.E</span> V</h1>
+			<a class="black-text" href="index"><h1 class="center-align"><span class="grey-text">D.E</span> V</h1></a>
 		</div>
 		
 			 <nav>
     			<div class="nav-wrapper light-blue darken-3 sticky">
-    				<a href="#" class="brand-logo" id="logo"><span class="grey-text">D.E</span> V</a>
-      				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i>Menu</a>
-      				<ul class="right hide-on-med-and-down container">
+    				<a href="index" class="brand-logo" id="logo"><span class="grey-text">D.E</span> V</a>
+      				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      				<ul class="hide-on-med-and-down centered">
         				<li>
-	        				<a href="index.php">
+	        				<a href="index">
 	        				<i class="fa fa-home" aria-hidden="true"></i>
 								Home
 							</a>
 						</li>
 						<li>
-							<a href="contact.php">
+							<a href="contact">
 							<i class="fa fa-phone" aria-hidden="true"></i>
 							Contact
 							</a>
 						</li>
 						<li id="portfolio">
-							<a href="portfolio-web.php" class="waves-effect waves-light btn-large red darken-3">Portfolio</a>
+							<a href="portfolio-web" class="waves-effect waves-light btn-large red darken-3">Portfolio</a>
 						</li>
      				</ul>
      				<ul class="side-nav" id="mobile-demo">
      					<li>
-	     					<a href="portfolio-web.php" class="waves-effect waves-light btn red darken-3">
+	     					<a href="portfolio-web" class="waves-effect waves-light btn red darken-3">
 							Portfolio
 							</a>
 						</li>
-				        <li><a href="index.php">Home</a></li>
-						<li><a href="contact.php">Contact</a></li>
+				        <li><a href="index">Home</a></li>
+						<li><a href="contact">Contact</a></li>
       				</ul>
     			</div>
  			 </nav>
@@ -75,7 +75,7 @@
                 	<h5 class="white-text">I'm up for every propositions</h5>
                 	<p class="grey-text text-lighten-4"><strong> DUSCH EWEN DEVELOPMENT - WEBSITE CREATION - INTEGRATOR</strong></p>
                 	<p class="grey-text text-lighten-4">Check my Portfolio to see  all my creations.</p>
-                	<a href="portfolio-web.php" class="waves-effect waves-light btn-large red darken-3"><i class="fa fa-book" aria-hidden="true"></i>
+                	<a href="portfolio-web" class="waves-effect waves-light btn-large red darken-3"><i class="fa fa-book" aria-hidden="true"></i>
 				Portfolio</a>
               	</div>
               	<div class="col l4 offset-l2 s12">
@@ -99,8 +99,8 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-            © 2016 Copyright Dusch Ewen
-            <a class="grey-text text-lighten-4 right" href="contact.php">Contact me !</a>
+            © 2016 Copyright DUSCH Ewen
+            <a class="grey-text text-lighten-4 right" href="contact">Contact me !</a>
             </div>
         </div>
         </footer>
@@ -108,20 +108,25 @@
             
             
 <script type="text/javascript">
-$(document).ready(function(){
-$('.carousel').carousel();});
-$(".button-collapse").sideNav();	
-jQuery(function($){
-$(document).ready(function(){
-$(function(){
-$(window).scroll(function(){
-var scroll = $(window).scrollTop();
-if (scroll >= 280){
-$(".sticky").addClass('smaller');
-} else { $(".sticky").removeClass("smaller");} 
-}); }); }); }); 
-//$('#textarea1').val('Your message');
-$('#textarea1').trigger('autoresize');
+$(document).ready(function()
+{
+	$('.carousel').carousel();
+	$(".button-collapse").sideNav();	
+	$(window).scroll(function()
+	{
+		var scroll = $(window).scrollTop();
+		if (scroll >= 280){
+			$(".sticky").addClass('smaller');
+							} 
+		else { 
+			$(".sticky").removeClass("smaller");
+		} 
+	});
+	$('#textarea1').trigger('autoresize');
+
+});
+$('.carousel.carousel-slider').carousel({full_width: true});
+
 </script>
 </body>
 </html>

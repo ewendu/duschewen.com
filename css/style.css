@@ -11,13 +11,18 @@ header  .btn-large
 {
 	margin-left: 20%;
 }
-header li 
-{
-	margin-left: 10%;
-}
+
 nav ul li a 
 {
 	font-size: 1.5em;
+}
+.centered li:first-child
+{
+	margin-left: 41%!important;
+}
+.centered li:last-child
+{
+	margin-left: 10%;
 }
 /* Sticky menu */
 .size
@@ -38,29 +43,16 @@ nav ul li a
 }
 #portfolio
 {
-	margin-right: 20%;
+	margin-right: 10%;
 	display: none;
 	font-size: 10px;
-
 }
 .sticky
 {
 	width:100%;
 	top:0;
 	z-index:999;
-	-webkit-transition:height 0.3s ease;
-	-moz-transition:height 0.3s ease;
-	-ms-transition:height 0.3s ease;
-	-o-transition:height 0.3s ease;
-	transition:height 0.3s ease;
-}
-.sticky img
-{
-	-webkit-transition:all 0.3s;
-	-moz-transition:all 0.3s;
-	-ms-transition:all 0.3s;
-	-o-transition:all 0.3s;
-	transition:all 0.3s;
+	
 }
 .sticky.smaller
 {
@@ -136,44 +128,45 @@ nav ul li a
 	color: #0d47a1!important;
 }
 
-@media screen and (max-width: 600px)
+ @media screen and (max-width: 1120px)
  {
- 	
- 	header  .btn-large
+ 	.centered li:last-child
+ 	{
+ 		margin-left: 5%;
+ 	}
+ 	.centered li:first-child
+{
+	margin-left: 39%!important;
+}
+	header  .btn-large
 	{
 	margin: 0;
-	}
-
- }
- @media screen and (max-width: 1300px)
- {
-
-	 #logo
-	{
-		display: none!important;
-	}
-	
-	#portfolio
-	{
-	 	float: right;
-	 	display: none!important;
 	}
  }
  .check
  {
  	font-size: 2em;
  }
+ /* Portfolio 
  .portfolio
  {
  	border-bottom: 1px solid;
  	padding: 2%;
 
  }
+ .portfolio section:first-child
+ {
+ 	border-top: 1px solid;
+ }
  .portfolio img
  {
- 	max-width: 50%;
+ 	max-width: 70%;
  }
  footer ul li 
  {
  	font-size: 1.1em!important;
  }
+ .portfolio .indicator-item
+ {
+ 	background-color: black!important;
+ }*/

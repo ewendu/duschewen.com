@@ -147,7 +147,7 @@ nav ul li a
  {
  	font-size: 2em;
  }
- /* Portfolio 
+  /*  Portfolio */ 
  .portfolio
  {
  	border-bottom: 1px solid;
@@ -169,4 +169,4 @@ nav ul li a
  .portfolio .indicator-item
  {
  	background-color: black!important;
- }*/
+ }
